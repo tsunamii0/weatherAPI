@@ -34,7 +34,7 @@ const fetchWeather = async (city, system) => {
     const temp = `${data.main.temp}`
     const finaltemp = temp - 273.15
     const icon = `${data.weather[0].icon}`
-    img.scr = '/icons/' + icon + '.png'
+    imgHTML.src = '/icons/' + icon + '.png'
     console.log(`/icons/` + `${data.weather[0].icon}` + '.png')
     li.innerHTML = (`${data.name}` ) 
     list.appendChild(li);
@@ -43,8 +43,6 @@ const fetchWeather = async (city, system) => {
     li1.innerHTML = (data.weather[0].main);    
     list.appendChild(li1);
 }
-
-imgHTML.src = '/icons/' + '04d' + '.png'
 
 
 fetchWeather('travnik')

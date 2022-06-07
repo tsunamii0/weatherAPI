@@ -8,16 +8,37 @@ body {
 li {
     list-style-type: none;
     padding: 10px;
-    color: #28282d;
+    color: #ffffff;
+    margin-right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+ul {
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
 }
 
 .weatherDiv {
-    background-color: #f0f0f0;
-    width: 400px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  background-image: url(/bg.jpg);
+  background-size: cover;
 }
 
 button {
     border: none;
+}
+
+img {
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
 }
 
 input {
@@ -107,3 +128,4 @@ input {
   transition: 0s;
   transform: translate(0, 5%);
 }
+
